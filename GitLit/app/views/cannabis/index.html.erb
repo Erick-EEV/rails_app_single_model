@@ -1,0 +1,6 @@
+<h1>Cannabis As Far As The Eye Can See!</h1>
+
+
+<% @cannabi.each do |weed|%>
+    <%= link_to weed.strain, cannabi_path(weed.id)%><br>
+<%end%>

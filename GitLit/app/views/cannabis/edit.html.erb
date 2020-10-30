@@ -1,0 +1,19 @@
+<h1>What'd You Mess Up?</h1>
+
+<%= form_for @cannabis do |f|%>
+
+    <%= f.label :strain %>
+    <%= f.text_field :strain %><br>
+
+    <%= f.label :classification %>
+    <%= f.select(:classification, ["Indica", "Sativa", "Hybrid"])%><br>
+
+    <%= f.label :price %>
+    <%= f.number_field :price %><br>
+
+    <%= f.label :description %>
+    <%= f.text_field :description %><br>
+
+    <%= f.submit%>
+
+<%end%>

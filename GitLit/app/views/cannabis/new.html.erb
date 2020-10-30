@@ -1,0 +1,19 @@
+<h1>Create A New Strain!</h1>
+
+<%= form_tag cannabis_path do%>
+
+    <%= label_tag :strain, 'Strain'%>
+    <%= text_field_tag :strain%><br>
+
+    <%= label_tag :classification, 'Classification'%>
+    <%= select_tag :classification, "<option>Sativa</option><option>Indica</option><option>Hybrid</option>".html_safe%><br>
+
+    <%= label_tag :price, 'Price'%>
+    <%= number_field_tag :price%><br>
+
+    <%= label_tag :description, 'Please Enter A Breif Description'%><br>
+    <%= text_field_tag :description%><br>
+
+    <%= submit_tag 'Submit Cannabis!' %>
+
+<%end%>

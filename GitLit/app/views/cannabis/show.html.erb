@@ -1,0 +1,19 @@
+<h1>This Strain's Details</h1>
+<%= link_to 'Edit', edit_cannabi_path%><br>
+<ul>
+    <li><%= label_tag 'Strain:'%>
+    <%= @cannabi.strain%></li>
+
+    <li><%= label_tag 'Classification:'%>
+    <%= @cannabi.classification%></li>
+
+    <li><%= label_tag 'Price:'%>
+    <%= @cannabi.price%></li>
+
+    <li><%= label_tag 'Description:'%>
+    <%= @cannabi.description%></li>
+
+    <%= link_to 'Back To Index Page', cannabis_path%>
+
+    <%= button_to 'delete', @cannabi, method: 'delete' %>
+<ul>
